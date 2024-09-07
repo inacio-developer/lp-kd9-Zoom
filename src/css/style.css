@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* general settings */
+
+h1, h2, h3, h4, h5, p, a, button, span, input {
+    font-family: 'Barlow';
+}
+
+a {
+    cursor: pointer;
+}
+.btn {
+    font-family: 'Barlow';
+}
+
+h1 {
+    font-size: 6rem
+}
+
+nav {
+    height: 10%;
+}
+
+header {
+    height: 90%;
+}
+
+
+/* glass home-page */
+
+.glass{
+    background: linear-gradient(135deg, rgba( 64, 64, 63, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border:1px solid rgba(167, 164, 164, 0.1);
+}
+
+.glass-title-nine {
+
+    width: 22%;
+    height: 31%;
+   max-width: 8rem;
+   max-height: 8rem;
+    background: linear-gradient(135deg, rgba(242, 242, 242, 0), rgba(114, 113, 113, .1));
+    border: none;
+    top: 09%;
+    right: 31%;
+}
+
+.glass-button {
+    display: none;
+    width: 15% ;
+    height: 21%;
+    max-width: 5.5rem;
+    max-height: 5.5rem;
+    bottom: 0rem;
+    left: 17.5%;
+}
+
+.glass-center {
+    width: 42%;
+    height: 57%;
+    max-width: 15rem;
+    max-height: 15rem;
+    top: 9%;
+    right: 34%;
+}
+
+.glass-top {
+    width: 28.5%;
+    height: 39.8%;
+    max-width: 10rem;
+    max-height: 10rem;
+    top: 0rem;
+    left: 05%;
+}
+
+.glass-bottom, .glass-right {
+    max-width: 10rem;
+    max-height: 10rem;
+
+    width: 28%;
+    height: 37%;
+}
+
+.glass-bottom {
+    bottom: 0rem;
+    right: 22%;
+}
+
+.glass-right {
+    left: 62%;
+    top: 02%;
+}
+
+
+
+/* img settings */
+
+.boot-img {
+    width: 80%;
+}
+
+.carousel img {
+    height: 13rem;
+    object-fit:cover
+  }
+
+
+
+/* class useful */
+
+.bg-main  {
+    background-color: #484848;
+}
+
+.text-main {
+    color: #40403F;
+}
+
+
+.bg-alternative {
+    background-color: #727171;
+}
+
+.bg-main-2 {
+    background-color: #BFBFBF;
+}
+
+
+.ls-1 {
+    letter-spacing: .1rem;
+}
+
+.ls-2 {
+    letter-spacing: 0.4rem;
+}
+
+.rotate-1 {
+    transform: rotate(90deg);
+}
+
+.rotate-2 {
+    transform: rotate(-25deg);
+}
+
+
+.fs-0-9 {
+    font-size: 0.9rem;
+}
+
+
+.mb-4-0 {
+    margin-bottom: 6.8rem
+}
+
+.mb-2-0 {
+    margin-bottom: 3.8rem;
+}
+
+.mb-1-8 {
+    margin-bottom: 2.5em
+}
+
+.container-menu-home {
+    height: 35rem;
+    background: linear-gradient(#F2F2F2 70%, #BFBFBF 100%);
+}
+
+.text-cut {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Número de linhas antes do corte */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .filter-contrast {
+    filter: contrast(0.5);
+  }
+/* overridden bootstrap classes */
+
+.nav-link {
+    color: #404040
+}
+
+a:hover, .nav-link:hover, .nav-link:focus {
+    color: #2b2a2a
+}
+
+.btn:hover {
+    background-color: #2b2a2a;
+}
+
+.title-card {
+    font-size: 1.5rem;
+  }
+
+  :focus {
+    outline: none;
+    border-color: white !important; /* Exemplo de cor verde */
+    box-shadow: 0 0 0.3rem 0.1rem white !important;
+  }
+
+a:focus, a{
+    box-shadow: none !important;
+}
+
+.card {
+    width: 100%;
+}
+
+
+
+/* keyframes */
+
+
+  @keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+  /* others */
+
+.body-website {
+    animation: .9s ease-in-out opacity;
+}
+
+  .page-intro  {
+    animation: .9s ease-in-out opacity;
+  }
+
+  .btn-animation {
+    background-image: linear-gradient(to bottom, #0f0f0f 0%,#404040 100%); 
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+
+  .btn-animation:hover {
+    background-position: -200%;
+    transition: background 300ms ease-in-out;
+  }
